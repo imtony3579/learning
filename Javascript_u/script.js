@@ -1,10 +1,8 @@
-function sample() {
-    var name = document.querySelector('#nu').value;
-    try {
-        throw "Unknown_user";
-    } catch (error) {
-        document.querySelector("#a").innerHTML = error;
-    } finally {
-        document.querySelector("#a").innerHTML += "<br /> try/catch/finally ran the code";
+var newArray = ['a', [2, 3, 5, 6], 'b'];
+
+for (var index in newArray) {
+    console.log(index)
+    if (newArray[index].constructor === Array) {
+        console.log(newArray[index]);
     }
 }
