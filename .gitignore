@@ -1,1 +1,4 @@
 *.swp
+*.jpeg
+*.jpg
+.gitignore
