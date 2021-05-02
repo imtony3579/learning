@@ -14,47 +14,36 @@
         <h3>the sit were you can find the best news</h3>
     </header>
     <main>
-        <section>
-            <article>
-                <a href="#">
-                    <h4>Covid 19</h4>
-                </a>
-                <img width="50%" src="1.jpeg" />
-                <p>The situation for the covid19 is getting out of control if we don't do some thing we can't hold the expontial deaths
-                </p>
-                <br/> <br/>
-            </article>
-            <article>
-                <a href="#">
-                    <h4>Mass vaciantion</h4>
-                </a>
-                <p>Due to the increasing number of cases on covid 19 it becomes very important to make sure that we boost the vaccination.
-                </p>
-                </p>
-                <br/> <br/>
-            </article>
-            <article>
-                <a href="#">
-                    <h4>Help from outside</h4>
-                </a>
-                <p>We are getting lot help form other countries in terms of the medical aid, like vaccine, health kit for out health workers etc.
-                </p>
-                <br/> <br/>
-            </article>
-        </section>
-        <section>
-            <div>
-                <h4>About me</h4>
-                <p>We provide the best news not the most accurate one, but one will enjoy reading the news we provide.
-                </p>
-            </div>
+        <section id="Creating new form">
+            <form action="POST">
+                <h5>Option</h5>
+                <input type="radio" name="option" value="home">Home delivery<br />
+                <input type="radio" name="option" value="pick">Pick up<br />
+
+                <h5> Personal details</h5>
+                <input name="address" type="text" placeholder="Address" /><br />
+                <input name="Contact" type="text" placeholder="contact no"><br />
+                <input name="state" type="text" placeholder="state">
+                <input name="pincode" type="number" placeholder="pincode"><br />
+
+                <h5>Size</h5>
+                <select name="size">
+                <option value="12">12" free</option>
+                <option value="14">14 " not free</option>
+                </select>
+
+                <h5>Ingrediense</h5>
+                <input type="checkbox" name="Ingrediense" value="first">first ingrediense <br />
+                <input type="checkbox" name="imgrediense" value="second"> Second Ingrediense <br />
+
+                <br />
+                <button type="submit">PLace order</button>
+                <br />
+
+            </form>
         </section>
     </main>
-    <section id="contact-form">
-        <form method="GET" action="place-order.php">
 
-        </form>
-    </section>
     <footer>
         &copy; Copyright 2021 <br />
         <a href="#"> Terms and service</a>
